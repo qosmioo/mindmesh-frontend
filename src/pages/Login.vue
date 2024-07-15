@@ -9,7 +9,7 @@
       <div class="input-group flex-nowrap m-2">
         <input type="password" class="form-control" placeholder="Пароль" aria-label="Username" aria-describedby="addon-wrapping" v-model="authData.password">
       </div>
-      <my-button @click="signIn">Войти</my-button>
+      <my-button @click="mockAuth">Войти</my-button>
       <p @click="$router.push('/signup')" style="cursor: pointer">У меня нет аккаунта</p>
     </div>
   </div>
@@ -41,6 +41,10 @@ export default {
       }).join(''));
 
       return JSON.parse(jsonPayload);
+    },
+    mockAuth() {
+      this.$store.commit("login", this.authData);
+      this.$router.push('/teams');
     },
     async signIn() {
       const data = await sendLoginRequest(this.authData.email.replace('@', '%40'), this.authData.password);

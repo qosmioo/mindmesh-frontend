@@ -92,7 +92,7 @@ input {
 }
 
 .button {
-  background-color: #f6b528;
+  background-color: #0d2695;
   border-radius: 20px;
 }
 

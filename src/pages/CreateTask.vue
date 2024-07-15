@@ -22,7 +22,7 @@
       <div v-if="error_flag">Необходимо выбрать исполнителя</div>
       <user-list :users="users" @userSelected="handleUserSelected"></user-list>
       <p v-if="selectedUser">Выбранный пользователь: {{ selectedUser.name }}</p>
-      <my-button style="background-color: #f6b528" @click="createTask">Сохранить</my-button>
+      <my-button style="background-color: #0d2695" @click="createTask">Сохранить</my-button>
     </div>
   </div>
 </template>

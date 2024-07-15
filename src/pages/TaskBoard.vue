@@ -102,7 +102,7 @@ export default {
   height: 100%;  /* Ограничивается только размером родительского элемента */
 }
 .button {
-  background-color: #f6b528;
+  background-color: #0d2695;
   margin: 20px;
 }
 </style>

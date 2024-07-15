@@ -15,12 +15,11 @@ import CreateTask from "@/pages/CreateTask.vue";
 import Participants from "@/pages/Members.vue";
 import CreatePost from "@/pages/CreatePost.vue";
 import AddMember from "@/pages/AddMember.vue";
-import Leaderboard from "@/pages/Leaderboard.vue";
 
 const routes = [
     {
         path: '/',
-        component: Main
+        redirect: '/login'
     },
     {
         path: '/team/:id/feed',
@@ -74,10 +73,6 @@ const routes = [
     {
         path: '/member-add',
         component: AddMember
-    },
-    {
-        path: '/team/:id/leaderboard',
-        component: Leaderboard
     }
 ]
 

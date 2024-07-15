@@ -3,7 +3,7 @@
     <h4 class="mb-3">Командный проект {{ $store.state.teamName }}</h4>
     <div class="d-flex flex-row align-items-center gap-4">
       <h4>Участники</h4>
-      <my-button style="background-color: #f6b528" @click="this.$router.push('/member-add')">Добавить участника</my-button>
+      <my-button style="background-color: #0d2695" @click="this.$router.push('/member-add')">Добавить участника</my-button>
     </div>
     <div class="form-members">
       <user-list :users="users"></user-list>
@@ -41,6 +41,10 @@ export default {
   min-height: 700px;
   background-image: url("/src/images/background.png");
   background-size: auto;
+}
+
+.button{
+  background-color: #0d2695;
 }
 
 .form-members {

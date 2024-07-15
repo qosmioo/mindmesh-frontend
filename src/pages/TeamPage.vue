@@ -54,7 +54,7 @@ export default {
 
 .button {
   border: 15px;
-  background-color: #f6b528;
+  background-color: #0d2695;
 }
 
 .teamPage {

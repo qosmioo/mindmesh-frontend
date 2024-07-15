@@ -11,7 +11,7 @@
       <div class="input-group mb-4">
         <input type="text" class="form-control" id="description-input" placeholder="Введите текст поста" v-model="post.text">
       </div>
-      <my-button style="background-color: #f6b528" @click="createPost">Сохранить</my-button>
+      <my-button style="background-color: #0d2695" @click="createPost">Сохранить</my-button>
     </div>
   </div>
 </template>

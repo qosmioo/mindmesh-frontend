@@ -3,7 +3,7 @@
     <h4>Командный проект {{ $store.state.teamName }}</h4>
     <div class="d-flex flex-row align-items-center mb-4">
       <my-input v-model="searchQuery" placeholder="Поиск..."/>
-      <my-button @click="$router.push('/post-create')">Создать пост</my-button>
+      <my-button @click="$router.push('/post-create')" style="background-color: #0d2695">Создать пост</my-button>
     </div>
     <post-list
         :posts="sortedAndSearchedPosts"
